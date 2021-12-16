@@ -17,11 +17,10 @@
 	<title>BOOKS</title>
 	<h1>Indian Authors</h1>
 	<?php foreach ($books as $book) { ?>
-		<h2><?php echo $book['name']; ?></h2>
-		<h4><?php echo $book['author'];?></h4>
+		<h2><?php echo $book['name'] . ' Written By ' .$book['author']; ?></h2>
 
-		<p>$<?php echo $book['price'];?></p>
-		<?php }?>
+		<p>$ <?php echo $book['price'];?></p>
+	<?php }?>
 </head>
 <body>
 	
